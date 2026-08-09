@@ -1,0 +1,4 @@
+credentials/
+flowlyy/credentials/
+*.env
+.env*
