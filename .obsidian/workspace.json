@@ -11,10 +11,14 @@
             "id": "ead7555264ff1139",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Home.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Home"
             }
           }
         ]
@@ -95,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -157,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Home.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,43 +190,10 @@
   },
   "active": "ead7555264ff1139",
   "lastOpenFiles": [
-    "_archived-looppages/scripts/README.md",
-    "_archived-looppages/_inbox/README.md",
-    "_archived-looppages/website/README.md",
-    "_archived-looppages/templates/README.md",
-    "_archived-looppages/prospects/README.md",
-    "_archived-looppages/credentials/README.md",
-    "_archived-looppages/outreach/README.md",
-    "_archived-looppages/references/README.md",
-    "_archived-looppages/decisions/README.md",
-    "_archived-looppages/docs/delivery-template-spec.md",
-    "_archived-looppages/docs/README.md",
-    "_archived-looppages/content/README.md",
-    "_archived-looppages/clients/README.md",
-    "_archived-looppages/brand-assets/README.md",
-    "_archived-looppages/archives/README.md",
-    "_archived-looppages/_inbox",
-    "_archived-looppages/website",
-    "_archived-looppages/scripts",
-    "_archived-looppages/templates",
-    "_archived-looppages/references",
-    "_archived-looppages/outreach",
-    "_archived-looppages/prospects",
-    "_archived-looppages/decisions",
-    "_archived-looppages/docs",
-    "_archived-looppages/credentials",
-    "looppages/website/README.md",
-    "looppages/scripts/README.md",
-    "looppages/references/README.md",
-    "looppages/prospects/README.md",
-    "looppages/outreach/README.md",
-    "looppages/docs/README.md",
-    "looppages/docs/delivery-template-spec.md",
-    "looppages/decisions/README.md",
-    "looppages/credentials/README.md",
-    "looppages/content/README.md",
-    "looppages/clients/README.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas"
+    "CLAUDE.md",
+    "Home.md",
+    "flowlyy/uche-2.0/system-prompt.md",
+    "flowlyy/uche-2.0/north-star.md",
+    "flowlyy/uche-2.0/routing-map.md"
   ]
 }
