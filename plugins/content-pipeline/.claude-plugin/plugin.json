@@ -1,0 +1,12 @@
+{
+  "name": "content-pipeline",
+  "displayName": "5-Agent Content Pipeline",
+  "version": "1.0.0",
+  "description": "Strategist, researcher, writer, editor, and publisher agents that turn a topic into platform-ready LinkedIn/X/Instagram content.",
+  "author": {
+    "name": "Divine",
+    "url": "https://github.com/DivineUchenna"
+  },
+  "homepage": "https://github.com/DivineUchenna/flowlyy_workspace",
+  "license": "MIT"
+}

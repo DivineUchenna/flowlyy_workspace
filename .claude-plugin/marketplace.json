@@ -1,0 +1,16 @@
+{
+  "name": "divine-plugins",
+  "owner": {
+    "name": "Divine",
+    "url": "https://github.com/DivineUchenna"
+  },
+  "plugins": [
+    {
+      "name": "content-pipeline",
+      "source": "./plugins/content-pipeline",
+      "displayName": "5-Agent Content Pipeline",
+      "description": "Strategist, researcher, writer, editor, and publisher agents that turn a topic into platform-ready LinkedIn/X/Instagram content.",
+      "version": "1.0.0"
+    }
+  ]
+}
