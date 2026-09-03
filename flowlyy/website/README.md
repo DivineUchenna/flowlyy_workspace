@@ -19,7 +19,6 @@ index.html                 Source page (edit this)
 site/index.html            Deployed copy — keep byte-identical to index.html
 site/_redirects            Netlify SPA fallback
 site/img/                  Images used by the page
-flowlyy.html               Earlier variant, kept for reference
 flowlyy-logo*.svg          Horizontal lockups: ink, purple, white
 Flowlyy Brand Assets/      Full mark kit (svg masters, png exports, favicons)
 ```
