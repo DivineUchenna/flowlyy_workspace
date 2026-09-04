@@ -1,0 +1,34 @@
+# ── macOS ──
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Editor / backup files ──
+*.bak
+*.tmp
+*~
+.flowlyy-tui-backup.html
+
+# ── Scratch ──
+Screenshot*.png
+Screen Shot*.png
+
+# ── Large media: never commit video to git ──
+*.mp4
+*.mov
+*.webm
+*.avi
+
+# ── Dependencies / build output ──
+node_modules/
+dist/
+.cache/
+.netlify/
+
+# ── Secrets: never commit these ──
+.env
+.env.*
+*.key
+*.pem
+credentials*.json
