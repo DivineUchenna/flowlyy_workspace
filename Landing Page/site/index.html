@@ -851,7 +851,7 @@
       Put your number in and the agent calls you in about ten seconds. Be difficult with it.
     </p>
     <form class="callform" id="demoForm" novalidate>
-      <span class="box"><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Your mobile number" aria-label="Your mobile number"></span>
+      <span class="box"><input id="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Your mobile number, with country code" aria-label="Your mobile number"></span>
       <button class="btn" type="submit">Have it call me</button>
     </form>
     <p class="form-note" id="formNote"><b>No signup, no card.</b> No follow‑up unless you ask.</p>
@@ -914,7 +914,9 @@
   var form = document.getElementById("demoForm"),
       note = document.getElementById("formNote"),
       input = document.getElementById("phone"),
-      original = note.innerHTML;
+      submitBtn = form.querySelector("button[type=submit]"),
+      original = note.innerHTML,
+      originalBtnText = submitBtn.textContent;
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     var digits = (input.value || "").replace(/[^\d]/g, "");
@@ -923,8 +925,32 @@
       input.focus();
       return;
     }
-    note.innerHTML = "<b>Demo page — not wired up yet.</b> Connect a Twilio number and this triggers the outbound call.";
-    window.setTimeout(function () { note.innerHTML = original; }, 6000);
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Calling…";
+    note.innerHTML = "<b>Ringing your phone now.</b> Should land in about ten seconds.";
+    fetch("/api/call-me", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone: input.value })
+    })
+      .then(function (r) {
+        return r.json().catch(function () { return {}; }).then(function (data) {
+          return { ok: r.ok, data: data };
+        });
+      })
+      .then(function (result) {
+        note.innerHTML = result.ok && result.data.ok
+          ? "<b>On its way.</b> Pick up when it rings."
+          : "<b>Couldn't place that call.</b> " + (result.data.error || "Try again in a moment.");
+      })
+      .catch(function () {
+        note.innerHTML = "<b>Something went wrong.</b> Try again in a moment.";
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+        window.setTimeout(function () { note.innerHTML = original; }, 8000);
+      });
   });
 })();
 </script>
