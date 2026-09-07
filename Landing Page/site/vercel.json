@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/call-me.js": {
+      "runtime": "nodejs20.x"
+    }
+  }
+}
