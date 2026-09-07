@@ -34,9 +34,9 @@ function toE164(raw) {
     return "+" + s.slice(1).replace(/\D/g, "");
   }
   let digits = s.replace(/\D/g, "");
-  if (digits.startsWith("0")) {
-    // Demo business is UK-based; treat a leading 0 as a UK national number.
-    digits = "44" + digits.slice(1);
+  if (digits.length === 10) {
+    // Demo business is US-based; treat a bare 10-digit number as missing its US country code.
+    digits = "1" + digits;
   }
   return "+" + digits;
 }
